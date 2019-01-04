@@ -60,12 +60,23 @@ body{
 }
 
 nav{
-  background-color: hotpink;
   height: 10vh;
+  background-color: rgb(216, 214, 193);
+  box-sizing: border-box;
+  padding-top: 3vh;
+  transition: 1s;
+}
+
+nav a{
+  color: rgb(29, 48, 18);
+  text-decoration: none;
+  margin-left: 5vw;
+  font-size: 30px;
+  border: 0.25rem solid rgb(29, 48, 18);
+  padding: 0.5rem;
 }
 
 #about{
-  height: 90vh;
   width: 100vw;
   display: flex;
 }
@@ -74,7 +85,11 @@ nav{
   width: 50vw;
   text-align: center;
   color: rgb(29, 48, 18);
-  padding: 0.5rem;
+  background-color: rgb(232, 233, 228);
+  padding: 0.7rem;
+  padding-bottom: 5rem;
+  box-sizing: border-box;
+  border: 0.4rem solid rgb(29, 48, 18);
 }
 
 .about-me h1{
@@ -88,7 +103,10 @@ nav{
 
 .about-photos{
   width: 50vw;
-  background-color: blue;
+  border: 0.4rem solid rgb(29, 48, 18);
+  border-left: 0;
+  box-sizing: border-box;
+  background-color: rgb(232, 233, 228);
 }
 
 #projects{
