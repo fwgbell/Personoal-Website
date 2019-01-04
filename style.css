@@ -79,6 +79,7 @@ nav a{
 #about{
   width: 100vw;
   display: flex;
+  background-color: rgb(29, 48, 18);
 }
 
 .about-me{
