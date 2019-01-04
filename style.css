@@ -11,7 +11,6 @@ body{
   width: 100vw;
   background-color: rgb(29, 48, 18);
   display: flex;
-
 }
 
 .welcome-picture-wrapper{
@@ -60,7 +59,44 @@ body{
   transform: rotate(90deg);
 }
 
+nav{
+  background-color: hotpink;
+  height: 10vh;
+}
+
 #about{
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
+  display: flex;
+}
+
+.about-me{
+  width: 50vw;
+  text-align: center;
+  color: rgb(29, 48, 18);
+  padding: 0.5rem;
+}
+
+.about-me h1{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.about-me p{
+  font-size: 25px;
+}
+
+.about-photos{
+  width: 50vw;
+  background-color: blue;
+}
+
+#projects{
+  width: 100vw;
+  background-color: red;
+}
+
+#contact{
+  width: 100vw;
+  background-color: purple;
 }
