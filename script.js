@@ -6,13 +6,21 @@ findOutMore.addEventListener('click', function(){
   nav.scrollIntoView();
 });
 
-const aboutHeight = about.scrollHeight;
+const windowHeight = window.innerHeight;
+const height = nav.scrollHeight + windowHeight;
 
 window.addEventListener('scroll', function(){
   const scrollAmount = window.scrollY;
-  if(scrollAmount > aboutHeight){
+  if(scrollAmount > height){
     nav.style.position = 'fixed';
-  } else {
+    about.style.marginTop = '90px';
+    setTimeout(function(){
+      nav.style.top = '0';
+    }, 200);
+  }
+  if(scrollAmount < height - 90){
     nav.style.position = 'static';
+    nav.style.top = '-90px';
+    about.style.marginTop = '0';
   }
 });

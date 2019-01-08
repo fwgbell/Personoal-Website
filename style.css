@@ -60,12 +60,12 @@ body{
 }
 
 nav{
-  height: 10vh;
+  height: 90px;
   background-color: rgb(216, 214, 193);
   border-bottom: 0.4rem solid rgb(29, 48, 18);
   box-sizing: border-box;
-  transition: 2s;
-  top: 0;
+  transition: top 1s;
+  top: -90px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -94,7 +94,6 @@ nav a{
   color: rgb(29, 48, 18);
   background-color: rgb(232, 233, 228);
   padding: 0.7rem;
-  padding-bottom: 5rem;
   box-sizing: border-box;
   border: 0.4rem solid rgb(29, 48, 18);
   border-top: 0;
@@ -109,18 +108,32 @@ nav a{
   font-size: 25px;
 }
 
-.about-photos{
+.about-skills{
   width: 50vw;
   border: 0.4rem solid rgb(29, 48, 18);
   border-top: 0;
   border-left: 0;
   box-sizing: border-box;
   background-color: rgb(232, 233, 228);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-skills div{
+  font-size: 25px;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0.25rem solid rgb(29, 48, 18);
+  padding: 0.3rem;
 }
 
 #projects{
   width: 100vw;
-  background-color: red;
+}
+
+#projects h1{
+  margin: 0;
 }
 
 #contact{
