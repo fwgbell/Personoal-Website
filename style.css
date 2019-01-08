@@ -162,26 +162,30 @@ nav a{
   border-top: 0.25rem solid rgb(29, 48, 18);
   background-color: rgb(232, 233, 228);
   color: rgb(29, 48, 18);
+  height: 60vh;
+  box-sizing: border-box;
 }
 
 .project-photos{
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  border: 0.25rem solid rgb(29, 48, 18);
+  box-sizing: border-box;
 }
 
 .project-photos img{
   width: 50%;
   height: 50%;
   box-sizing: border-box;
-  border: 0.25rem solid rgb(29, 48, 18);
+  border: 0.1rem solid rgb(29, 48, 18);
 }
 
 .project-photos div{
   width: 50%;
   height: 50%;
   box-sizing: border-box;
-  border: 0.25rem solid rgb(29, 48, 18);
+  border: 0.1rem solid rgb(29, 48, 18);
   display: flex;
   justify-content: space-around;
   background-color: white;
@@ -199,11 +203,15 @@ nav a{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border: 0.25rem solid rgb(29, 48, 18);
+  box-sizing: border-box;
 }
 
 .project-description h2{
   width: 100%;
   font-size: 40px;
+  margin: 0;
+  margin-top: 1vh;
 }
 
 .project-description p{
