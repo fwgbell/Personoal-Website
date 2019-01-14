@@ -4,6 +4,8 @@ html {
 
 body{
     margin: 0;
+    font-family: helvetica;
+    overflow-x: hidden;
 }
 
 #welcome{
@@ -66,10 +68,11 @@ nav{
   box-sizing: border-box;
   transition: top 1s;
   top: -90px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 2;
 }
 
 nav a{
@@ -80,6 +83,29 @@ nav a{
   text-align: center;
   border: 0.25rem solid rgb(29, 48, 18);
   padding: 0.5rem;
+  transition: background-color 0.5s;
+}
+
+.nav-item-line{
+  background-color: rgb(29, 48, 18);
+  width: 1vw;
+  height: 0px;
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+nav a:first-of-type .nav-item-line{
+  margin-top: -65px;
+}
+
+.selected{
+  background-color: white;
+}
+
+.selected-line{
+  height: 20px;
 }
 
 section h1{
@@ -107,6 +133,9 @@ section h1{
   box-sizing: border-box;
   border: 0.4rem solid rgb(29, 48, 18);
   border-top: 0;
+  position: relative;
+  left: -50vw;
+  transition: left 2s;
 }
 
 .about-me h1{
@@ -127,6 +156,9 @@ section h1{
   background-color: rgb(232, 233, 228);
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  left: 50vw;
+  transition: left 2s;
 }
 
 .about-skills h2{
@@ -169,6 +201,9 @@ section h1{
 
 .about-skills li{
   list-style-type: none;
+  position: relative;
+  left: 100vw;
+  transition: left 1s;
 }
 
 #projects{
@@ -180,7 +215,7 @@ section h1{
   border-top: 0.25rem solid rgb(29, 48, 18);
   background-color: rgb(232, 233, 228);
   color: rgb(29, 48, 18);
-  height: 60vh;
+  /* height: 60vh; */
   box-sizing: border-box;
 }
 
@@ -264,19 +299,25 @@ section h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  height: 80vh;
 }
 
 #contact h2{
   width: 100%;
   text-align: center;
   color: rgb(29, 48, 18);
-  margin-top: 0;
-  margin-bottom: 4vh;
+  margin: 0;
   font-size: 40px;
+}
+
+#contact h2:nth-of-type(2){
+  margin-top: -20%;
 }
 
 #contact a{
   margin: 0;
+  margin-top: -20%;
   color: rgb(29, 48, 18);
   text-decoration: none;
   font-size: 40px;
