@@ -121,26 +121,25 @@ section h1{
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(29, 48, 18);
+  background-color: white;
+}
+
+#about h1{
+  margin-bottom: 5vh;
 }
 
 .about-me{
-  width: 50%;
+  width: 40%;
   text-align: center;
   color: rgb(29, 48, 18);
   background-color: rgb(232, 233, 228);
   padding: 0.7rem;
   box-sizing: border-box;
   border: 0.4rem solid rgb(29, 48, 18);
-  border-top: 0;
   position: relative;
   left: -50vw;
   transition: left 2s;
-}
-
-.about-me h1{
-    font-size: 40px;
-    text-decoration: underline;
+  margin-left: 7%
 }
 
 .about-me p{
@@ -148,10 +147,8 @@ section h1{
 }
 
 .about-skills{
-  width: 50%;
+  width: 40%;
   border: 0.4rem solid rgb(29, 48, 18);
-  border-top: 0;
-  border-left: 0;
   box-sizing: border-box;
   background-color: rgb(232, 233, 228);
   display: flex;
@@ -159,6 +156,7 @@ section h1{
   position: relative;
   left: 50vw;
   transition: left 2s;
+  margin-left: 7%
 }
 
 .about-skills h2{
@@ -166,7 +164,7 @@ section h1{
   color: rgb(29, 48, 18);
   text-align: center;
   margin: 0;
-  font-size: 30px;
+  font-size: 35px;
   border-bottom: 0.25rem solid rgb(29, 48, 18);
 }
 
@@ -179,24 +177,44 @@ section h1{
 }
 
 .about-skills div:nth-child(2){
-  border-right: 0.25rem solid rgb(29, 48, 18);
   border-bottom: 0.25rem solid rgb(29, 48, 18);
+  width: 100%;
 }
 .about-skills div:nth-child(3){
-  border-left: 0.25rem solid rgb(29, 48, 18);
+  border-right: 0.25rem solid rgb(29, 48, 18);
   border-bottom: 0.25rem solid rgb(29, 48, 18);
+  border-top: 0.25rem solid rgb(29, 48, 18);
+}
+.about-skills div:nth-child(3) li{
+  width: 100%;
 }
 .about-skills div:nth-child(4){
   border-top: 0.25rem solid rgb(29, 48, 18);
-  border-right: 0.25rem solid rgb(29, 48, 18);
+  border-bottom: 0.25rem solid rgb(29, 48, 18);
+  border-left: 0.25rem solid rgb(29, 48, 18);
 }
+
+.about-skills div:nth-child(4) li{
+  width: 100%;
+}
+
 .about-skills div:nth-child(5){
   border-top: 0.25rem solid rgb(29, 48, 18);
-  border-left: 0.25rem solid rgb(29, 48, 18);
+  width: 100%;
+}
+
+.about-skills h3{
+ margin: 0;
+ padding: 0;
+ color: rgb(29, 48, 18);
 }
 
 .about-skills ul{
   padding: 0;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .about-skills li{
@@ -204,10 +222,82 @@ section h1{
   position: relative;
   left: 100vw;
   transition: left 1s;
+  color: rgb(29, 48, 18);
+  padding: 0 1rem;
 }
 
 #projects{
+  margin-top: 5vh;
   width: 100vw;
+}
+
+.project-previews{
+  margin: 5vh auto;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-previews div{
+  width: 35vw;
+  height: 35vh;
+  background-color: rgb(29, 48, 18);
+  cursor: pointer;
+}
+
+.project-previews div h2{
+  position: absolute;
+  width: 35%;
+  text-align: center;
+  font-size: 30px;
+  visibility: hidden;
+  color: white;
+  transition: 1s;
+}
+
+.project-previews div h3{
+  position: absolute;
+  width: 35%;
+  text-align: center;
+  font-size: 25px;
+  visibility: hidden;
+  color: white;
+  transition: 1s;
+  margin-top: 15vh;
+}
+
+.project-previews div p{
+  position: absolute;
+  width: 35%;
+  text-align: center;
+  font-size: 25px;
+  visibility: hidden;
+  color: white;
+  transition: 1s;
+  margin-top: 25vh;
+}
+
+.project-previews div img{
+  width: 35vw;
+  height: 35vh;
+  transition: 1s;
+}
+
+.project-previews div:hover h2{
+  visibility: visible;
+}
+
+.project-previews div:hover h3{
+  visibility: visible;
+}
+
+.project-previews div:hover p{
+  visibility: visible;
+}
+
+.project-previews div:hover img{
+  opacity: 0.05;
 }
 
 .project{
@@ -215,8 +305,10 @@ section h1{
   border-top: 0.25rem solid rgb(29, 48, 18);
   background-color: rgb(232, 233, 228);
   color: rgb(29, 48, 18);
-  /* height: 60vh; */
+  height: 60vh;
   box-sizing: border-box;
+
+  /* display: none; */
 }
 
 .project-photos{
@@ -299,8 +391,8 @@ section h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  height: 80vh;
+  align-items: flex-start;
+  height: 75vh;
 }
 
 #contact h2{
@@ -312,12 +404,10 @@ section h1{
 }
 
 #contact h2:nth-of-type(2){
-  margin-top: -20%;
 }
 
 #contact a{
   margin: 0;
-  margin-top: -20%;
   color: rgb(29, 48, 18);
   text-decoration: none;
   font-size: 40px;
