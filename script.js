@@ -73,7 +73,7 @@ window.addEventListener('scroll', function(){
   }
 
   // if viewing contact section
-  if(scrollAmount > welcome.scrollHeight + about.scrollHeight + projects.scrollHeight){
+  if(scrollAmount > welcome.scrollHeight + about.scrollHeight + projects.scrollHeight / 2){
     for(let i = 0; i < 4; i++){
       navItems[i].classList.remove('selected');
       navLines[i].classList.remove('selected-line');
