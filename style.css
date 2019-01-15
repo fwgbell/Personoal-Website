@@ -287,7 +287,7 @@ section h1{
 
 .project{
   width: 80vw;
-  min-height: 57vh;
+  min-height: 70vh;
   background-color: rgb(232, 233, 228);
   position: absolute;
   margin: 5vh 7vw;
@@ -328,6 +328,7 @@ section h1{
   padding-left: 2vw;
   margin-bottom: 0;
   margin-top: 0.1vw;
+  font-size: 1.25vw;
 }
 
 .project-description i{
@@ -338,6 +339,7 @@ section h1{
 
 .project-pictures{
   width: 50vw;
+  padding-top: 8vh;
 }
 
 .slideshow-container {
