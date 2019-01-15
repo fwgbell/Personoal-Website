@@ -34,7 +34,6 @@
         </p>
       </div>
       <div class="about-skills">
-        <h2>Skills</h2>
         <div>
           <h3>Technologies</h3>
           <ul>
@@ -88,33 +87,80 @@
     </section>
     <section id="projects">
       <h1>Projects</h1>
+      <div class="project">
+        <div class="project-pictures">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img id="slide1" src="https://i.imgur.com/ptv8Pz6.jpg">
+              <div class="caption">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img id="slide2" src="https://i.imgur.com/bXmdg00.jpg">
+              <div class="caption">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img id="slide3" src="https://i.imgur.com/aP6lgBp.png">
+              <div class="caption">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img id="slide4" src="https://i.imgur.com/aP6lgBp.png">
+              <div id="slide4-STP">
+                <img src="https://i.imgur.com/xCeTuNh.png" alt="Mobile app swipe page">
+                <img src="https://i.imgur.com/lo4vg5c.png" alt="Mobile app messaging page">
+              </div>
+              <div class="caption">Caption Four</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+        <div class="project-description">
+          <h2 id="project-title">Save The Pitch</h2>
+          <h3 id="close-icon"><i class="fas fa-times-circle"></i></h3>
+          <p class="description-text">The aim with Save the Pitch was to create an app that would get young people away from their screens and out onto the pitches, playgrounds and cages of inner city London.</p>
+          <p class="description-text">Through mapping and photographing these pitches I aimed to open them up to new players and make them inviting, attractive and accessible. I hoped to use technology to get people out there to join games and kick-abouts.</p>
+          <p class="description-text">This was my fourth and final project from my time at General Assembly, built on my own in just under a week. The application was made using an Express back-end and React front-end using several node modules such as leaflet and moment, to make the most of mapping and timings respectively.</p>
+          <p><a id="project-link" href="https://save-the-pitch.herokuapp.com/"><i class="fas fa-link"></i></a><a id="project-git" href="https://github.com/fwgbell/wdi-project-four"><i class="fab fa-github"></i></a></p>
+        </div>
+      </div>
       <div class="project-previews">
-        <div>
+        <div id="STP-preview">
           <h2>Save the pitch</h2>
-          <h3>Pitch Finder and Matchmaker app</h3>
+          <h3>Pitch finder and matchmaker app</h3>
           <p>Click to see more</p>
           <img src="https://i.imgur.com/ptv8Pz6.jpg" alt="STP home page">
         </div>
-        <div>
+        <div id="FS-preview">
           <h2>Film Spotting</h2>
-          <h3>Review Database and Social network</h3>
+          <h3>Review database and social network</h3>
           <p>Click to see more</p>
           <img src="https://i.imgur.com/znrZfl6.png" alt="Film spotting home page">
         </div>
-        <div>
+        <div id="FG-preview">
           <h2>Fredstagram</h2>
           <h3>"Instagram-esque" photo sharing site</h3>
           <p>Click to see more</p>
           <img src="https://i.imgur.com/hwYJXZM.png" alt="Fredstagram profile page">
         </div>
-        <div>
+        <div id="JIM-preview">
           <h2>Jungle is Massive</h2>
-          <h3>Fantasy Strategy Game</h3>
+          <h3>Fantasy strategy game</h3>
           <p>Click to see more</p>
           <img src="https://i.imgur.com/09WmkyU.png" alt="Jungle is massive home screen">
         </div>
       </div>
-      <div class="project">
+      <!-- <div class="project">
         <div class="project-photos">
           <img src="https://i.imgur.com/ptv8Pz6.jpg" alt="STP home page">
           <img src="https://i.imgur.com/bXmdg00.jpg" alt="STP map page">
@@ -123,61 +169,7 @@
             <img src="https://i.imgur.com/xCeTuNh.png" alt="Mobile app swipe page">
             <img src="https://i.imgur.com/lo4vg5c.png" alt="Mobile app messaging page">
           </div>
-        </div>
-        <div class="project-description">
-          <h2>Save The Pitch</h2>
-          <p>The aim with Save the Pitch was to create an app that would get young people away from their screens and out onto the pitches, playgrounds and cages of inner city London.</p>
-          <p>Through mapping and photographing these pitches I aimed to open them up to new players and make them inviting, attractive and accessible. I hoped to use technology to get people out there to join games and kick-abouts.</p>
-          <p>This was my fourth and final project from my time at General Assembly, built on my own in just under a week. The application was made using an Express back-end and React front-end using several node modules such as leaflet and moment, to make the most of mapping and timings respectively.</p>
-          <p><a href="https://save-the-pitch.herokuapp.com/"><i class="fas fa-link"></i></a><a href="https://github.com/fwgbell/wdi-project-four"><i class="fab fa-github"></i></a></p>
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-description">
-          <h2>Film Spotting</h2>
-          <p>My third project on the course was done in a group. We were tasked with creating a fully RESTful web app using an Angular.JS front-end. As a team we came up with Film Spotting, a movie database, social media mashup to see what films the people you follow rate highly.</p>
-          <p>Working in a group was challenging at first as we didn’t have as much freedom to code as we did with previous projects. However after learning to divide the work up and figuring out how to code in way we all agreed with, this project was really enjoyable and I’m proud of what our group was able to produce.</p>
-          <p>Having the most experience with social media features from my previous project I focused mostly on those, implementing the following, likes and reviews, as well as writing the functions to populate the feed with content.</p>
-          <p><a href="https://film-spotting.herokuapp.com/#!/"><i class="fas fa-link"></i></a><a href="https://github.com/fwgbell/wdi-project-3"><i class="fab fa-github"></i></a></p>
-        </div>
-        <div class="project-photos">
-          <img src="https://i.imgur.com/znrZfl6.png" alt="Film spotting home page">
-          <img src="https://i.imgur.com/M2PMxNh.jpg" alt="Film spotting index page">
-          <img src="https://i.imgur.com/ffUWUdQ.png" alt="Film spotting show page">
-          <img src="https://i.imgur.com/GiKTuVr.png" alt="Film spotting feed page">
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-photos">
-          <img src="https://i.imgur.com/hwYJXZM.png" alt="Fredstagram profile page">
-          <img src="https://i.imgur.com/Ux2xOKg.png" alt="Fredstagram explore page">
-          <img src="https://i.imgur.com/52SRL90.png" alt="Fredstagram feed page">
-          <img src="https://i.imgur.com/xv33doC.png" alt="Fredstagram show page">
-        </div>
-        <div class="project-description">
-          <h2>Fredstagram</h2>
-          <p>For project 2 at General Assembly I was tasked with producing an Instagram clone. During the module leading up to this task we’d covered Node.JS, Express.JS and EJS so I started by using those to create a fully restful site for uploading photos.</p>
-          <p>Once I was happy with that I started to work on registration and authentication. Then having reached a minimum viable product I spent the final few days working on more of the “Instagram like” features (likes, comments, following, etc).</p>
-          <p>I was pleased with how much I was able to recreate with only a weeks experience with the chosen technologies and I’m happy with the finished product.</p>
-          <p><a href="https://fredstagram.herokuapp.com/"><i class="fas fa-link"></i></a><a href="https://github.com/fwgbell/wdi-project-two"><i class="fab fa-github"></i></a></p>
-        </div>
-      </div>
-      <div class="project">
-        <div class="project-description">
-          <h2>Jungle is Massive</h2>
-          <p>Jungle is Massive is a turn based strategy game where two players choose and place troops on a battelfield and then fight it out to the last man standing.</p>
-          <p>This was my first project at General Assembly. The brief for this project was to build a grid based game using JavaScript. I decided on my idea because I wanted my project to have an easily achievable M.V.P. but enough depth that I could keep adding features to it.</p>
-          <p>Once I started coding I spent a long time working on how my grid was generated and how the game was setup to ensure that the fundamentals of the gameplay were solid before moving on.</p>
-          <p>I then used the rest of the week I had for this project to add more features to it, to make gameplay more complex and varied, as well as adding animations and sounds to make the game feel more polished.</p>
-          <p><a href="https://fwgbell.github.io/wdi-project-one/"><i class="fas fa-link"></i></a><a href="https://github.com/fwgbell/wdi-project-one"><i class="fab fa-github"></i></a></p>
-        </div>
-        <div class="project-photos">
-          <img src="https://i.imgur.com/09WmkyU.png" alt="Jungle is massive home screen">
-          <img src="https://i.imgur.com/afr6H2N.png" alt="Jungle is massive build army screen">
-          <img src="https://i.imgur.com/3mmZueg.png" alt="Jungle is massive gameplay">
-          <img src="https://i.imgur.com/VUfqKrp.png" alt="Jungle is massive win screen">
-        </div>
-      </div>
+       -->
     </section>
     <section id="contact">
       <h1>Contact Details</h1>

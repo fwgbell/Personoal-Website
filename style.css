@@ -148,11 +148,9 @@ section h1{
 
 .about-skills{
   width: 40%;
-  border: 0.4rem solid rgb(29, 48, 18);
-  box-sizing: border-box;
-  background-color: rgb(232, 233, 228);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   left: 50vw;
   transition: left 2s;
@@ -170,36 +168,30 @@ section h1{
 
 .about-skills div{
   font-size: 25px;
-  width: 50%;
+  width: 48%;
   text-align: center;
   padding: 0.3rem;
   box-sizing: border-box;
+  background-color: rgb(232, 233, 228);
+  border: 0.4rem solid rgb(29, 48, 18);
+  box-sizing: border-box;
+  margin-top: 2vh;
 }
 
-.about-skills div:nth-child(2){
-  border-bottom: 0.25rem solid rgb(29, 48, 18);
+.about-skills div:nth-child(1){
+  margin-top: 0;
   width: 100%;
 }
-.about-skills div:nth-child(3){
-  border-right: 0.25rem solid rgb(29, 48, 18);
-  border-bottom: 0.25rem solid rgb(29, 48, 18);
-  border-top: 0.25rem solid rgb(29, 48, 18);
+
+.about-skills div:nth-child(2) li{
+  width: 100%;
 }
+
 .about-skills div:nth-child(3) li{
   width: 100%;
 }
+
 .about-skills div:nth-child(4){
-  border-top: 0.25rem solid rgb(29, 48, 18);
-  border-bottom: 0.25rem solid rgb(29, 48, 18);
-  border-left: 0.25rem solid rgb(29, 48, 18);
-}
-
-.about-skills div:nth-child(4) li{
-  width: 100%;
-}
-
-.about-skills div:nth-child(5){
-  border-top: 0.25rem solid rgb(29, 48, 18);
   width: 100%;
 }
 
@@ -211,7 +203,7 @@ section h1{
 
 .about-skills ul{
   padding: 0;
-  margin-top: 0;
+  margin-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -224,6 +216,7 @@ section h1{
   transition: left 1s;
   color: rgb(29, 48, 18);
   padding: 0 1rem;
+  font-size: 20px;
 }
 
 #projects{
@@ -251,9 +244,9 @@ section h1{
   width: 35%;
   text-align: center;
   font-size: 30px;
-  visibility: hidden;
+  display: none;
   color: white;
-  transition: 1s;
+  transition: display 1s;
 }
 
 .project-previews div h3{
@@ -261,9 +254,9 @@ section h1{
   width: 35%;
   text-align: center;
   font-size: 25px;
-  visibility: hidden;
+  display: none;
   color: white;
-  transition: 1s;
+  transition: display 1s;
   margin-top: 15vh;
 }
 
@@ -272,28 +265,20 @@ section h1{
   width: 35%;
   text-align: center;
   font-size: 25px;
-  visibility: hidden;
+  display: none;
   color: white;
-  transition: 1s;
+  transition: display 1s;
   margin-top: 25vh;
 }
 
 .project-previews div img{
   width: 35vw;
   height: 35vh;
-  transition: 1s;
+  transition: opacity 1s;
 }
 
-.project-previews div:hover h2{
-  visibility: visible;
-}
-
-.project-previews div:hover h3{
-  visibility: visible;
-}
-
-.project-previews div:hover p{
-  visibility: visible;
+.project-previews div:hover h2, .project-previews div:hover h3, .project-previews div:hover p{
+  display: block;
 }
 
 .project-previews div:hover img{
@@ -301,83 +286,161 @@ section h1{
 }
 
 .project{
-  display: flex;
-  border-top: 0.25rem solid rgb(29, 48, 18);
+  width: 80vw;
+  min-height: 57vh;
   background-color: rgb(232, 233, 228);
-  color: rgb(29, 48, 18);
-  height: 60vh;
-  box-sizing: border-box;
-
-  /* display: none; */
+  position: absolute;
+  margin: 5vh 7vw;
+  padding: 0 2vw 0 2vw;
+  border: solid 5px rgb(29, 48, 18);
+  border-radius: 50px;
+  display: none;
 }
 
-.project-photos{
-  width: 50%;
+.project-description{
+  width: 30vw;
   display: flex;
   flex-wrap: wrap;
-  border: 0.25rem solid rgb(29, 48, 18);
-  box-sizing: border-box;
+  color: rgb(29, 48, 18);
 }
 
-.project-photos img{
-  width: 50%;
-  height: 50%;
-  box-sizing: border-box;
-  border: 0.1rem solid rgb(29, 48, 18);
+.project-description h2{
+  margin-left: 11%;
+  width: 86%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.project-photos div{
-  width: 50%;
-  height: 50%;
-  box-sizing: border-box;
-  border: 0.1rem solid rgb(29, 48, 18);
-  display: flex;
+.project-description h3{
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  margin: 0;
+  cursor: pointer;
+  width: 5%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.project-description p{
+  width: 100%;
+  text-align: center;
+  padding-left: 2vw;
+  margin-bottom: 0;
+  margin-top: 0.1vw;
+}
+
+.project-description i{
+  font-size: 2rem;
+  padding: 0 2rem;
+  color: rgb(29, 48, 18);
+}
+
+.project-pictures{
+  width: 50vw;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width: 100%;
+  min-height: 40vh;
+  max-height: 50vh;
+}
+
+#slide4-STP{
+  display: none;
+  width: 100%;
+  height: 50vh;
   justify-content: space-around;
   background-color: white;
 }
 
-.project-photos div img{
-  width: 40%;
-  height: 100%;
-  border: 0;
+#slide4-STP img{
+  width: 35%;
 }
 
-.project-description{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 0.25rem solid rgb(29, 48, 18);
-  box-sizing: border-box;
-}
-
-.project-description h2{
-  width: 100%;
-  font-size: 40px;
-  margin: 0;
-  margin-top: 1vh;
-}
-
-.project-description p{
-  width: 80%;
-  font-size: 20px;
-  margin-top: 1vh;
-  display: flex;
-  justify-content: center;
-}
-.project-description a{
-  color: rgb(29, 48, 18);
-}
-
-.project-description i{
-  font-size: 40px;
-  padding: 1rem;
-  transition: 0.5s;
-}
-
-.project-description i:hover{
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 #contact{
