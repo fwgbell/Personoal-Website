@@ -101,7 +101,8 @@ nav a:first-of-type .nav-item-line{
 }
 
 .selected{
-  background-color: white;
+  background-color: rgb(29, 48, 18);
+  color: rgb(216, 214, 193);
 }
 
 .selected-line{
