@@ -225,6 +225,7 @@ section h1{
   flex-wrap: wrap;
   opacity: 0;
   transition: opacity 5s;
+  border: 1vh solid rgb(29, 48, 18);
 }
 
 .project-previews div{
