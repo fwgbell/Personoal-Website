@@ -100,6 +100,7 @@ const projectTitle = document.getElementById('project-title');
 const descriptionText = document.getElementsByClassName('description-text');
 const projectLink = document.getElementById('project-link');
 const projectGit = document.getElementById('project-git');
+const projectBrief = document.getElementById('project-brief');
 
 stp.addEventListener('click', function(){
   slideIndex = 1;
@@ -121,6 +122,7 @@ stp.addEventListener('click', function(){
   descriptionText[2].innerHTML='This was my fourth and final project from my time at General Assembly, built on my own in just under a week. The application was made using an Express back-end and React front-end using several node modules such as leaflet and moment, to make the most of mapping and timings respectively.';
   projectLink.href='https://save-the-pitch.herokuapp.com/';
   projectGit.href='https://github.com/fwgbell/wdi-project-four';
+  projectBrief.innerHTML = 'Individual Project | 1 week | Mongo Express React Node';
 });
 
 fs.addEventListener('click', function(){
@@ -142,6 +144,7 @@ fs.addEventListener('click', function(){
   descriptionText[2].innerHTML='Having the most experience with social media features from my previous project I focused mostly on those, implementing the following, likes and reviews, as well as writing the functions to populate the feed with content.';
   projectLink.href='https://film-spotting.herokuapp.com/#!/';
   projectGit.href='https://github.com/fwgbell/wdi-project-3';
+  projectBrief.innerHTML = 'Group Project | 1 week | Mongo Express Angular Node';
 });
 
 fg.addEventListener('click', function(){
@@ -163,6 +166,7 @@ fg.addEventListener('click', function(){
   descriptionText[2].innerHTML='I was pleased with how much I was able to recreate with only a weeks experience with the chosen technologies and I’m happy with the finished product.';
   projectLink.href='https://fredstagram.herokuapp.com/';
   projectGit.href='https://github.com/fwgbell/wdi-project-two';
+  projectBrief.innerHTML = 'Individual Project | 1 week | Mongo Express EJS Node';
 });
 
 jim.addEventListener('click', function(){
@@ -184,6 +188,7 @@ jim.addEventListener('click', function(){
   descriptionText[2].innerHTML='I then used the rest of the week I had for this project to add more features to it, to make gameplay more complex and varied, as well as adding animations and sounds to make the game feel more polished.';
   projectLink.href='https://fwgbell.github.io/wdi-project-one/';
   projectGit.href='https://github.com/fwgbell/wdi-project-one';
+  projectBrief.innerHTML = 'Individual Project | 1 week | HTML5 CSS3 JavaScript';
 });
 
 const closeIcon = document.getElementById('close-icon');
