@@ -70,6 +70,7 @@ window.addEventListener('scroll', function(){
     }
     navItems[2].classList.add('selected');
     navLines[2].classList.add('selected-line');
+    document.getElementsByClassName('project-previews')[0].style.opacity = '1';
   }
 
   // if viewing contact section

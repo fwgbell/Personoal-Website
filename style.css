@@ -78,7 +78,7 @@ nav{
 nav a{
   color: rgb(29, 48, 18);
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 35px;
   width: 20vw;
   text-align: center;
   border: 0.25rem solid rgb(29, 48, 18);
@@ -106,7 +106,7 @@ nav a:first-of-type .nav-item-line{
 }
 
 .selected-line{
-  height: 2vh;
+  height: 16px;
 }
 
 section h1{
@@ -223,6 +223,8 @@ section h1{
   height: 70vh;
   display: flex;
   flex-wrap: wrap;
+  opacity: 0;
+  transition: opacity 5s;
 }
 
 .project-previews div{
@@ -322,7 +324,7 @@ section h1{
   padding-left: 2vw;
   margin-bottom: 0;
   margin-top: 0.1vw;
-  font-size: 1.3vw;
+  font-size: 16px;
 }
 
 .project-description i{
