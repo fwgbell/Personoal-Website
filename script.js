@@ -139,7 +139,7 @@ fs.addEventListener('click', function(){
   captions[2].innerHTML = 'A Film\'s Show Page';
   captions[3].innerHTML = 'A User\'s Review Feed';
   projectTitle.innerHTML = 'Film Spotting';
-  descriptionText[0].innerHTML='My third project on the course was done in a group. We were tasked with creating a fully RESTful web app using an AngularJS front-end. As a team we came up with Film Spotting, a movie database, social media mashup to see what films the people you follow rate highly.';
+  descriptionText[0].innerHTML='My third project on the GA course was done in a group. We were tasked with creating a fully RESTful web app using an AngularJS front-end. As a team we came up with Film Spotting, a movie database, social media mashup to see what films the people you follow rate highly.';
   descriptionText[1].innerHTML='Working in a group was challenging at first as we didn’t have as much freedom to code as we did with previous projects. However after learning to divide the work up and figuring out how to code in way we all agreed with, this project was really enjoyable and I’m proud of what our group was able to produce.';
   descriptionText[2].innerHTML='Having the most experience with social media features from my previous project I focused mostly on those, implementing the following, likes and reviews, as well as writing the functions to populate the feed with content.';
   projectLink.href='https://film-spotting.herokuapp.com/#!/';
