@@ -4,8 +4,20 @@ html {
 
 body{
     margin: 0;
-    font-family: 'Sarabun', helvetica, sans-serif;
+    /* font-family: 'Sarabun', helvetica, sans-serif; */
+    /* font-family: knockout; */
+    font-family: gill;
     overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "knockout";
+    src: url('knockoutww.woff') format('woff');
+}
+
+@font-face {
+    font-family: "gill";
+    src: url('gill.woff') format('woff');
 }
 
 #welcome{
@@ -41,6 +53,8 @@ body{
   text-align: center;
   margin-top: 40%;
   color: white;
+  font-family: knockout;
+  text-transform: uppercase;
 }
 
 .welcome-message p{
@@ -51,6 +65,8 @@ body{
   width: 20rem;
   margin: 2rem auto;
   padding: 1rem;
+  text-transform: uppercase;
+  font-family: knockout;
 }
 
 .welcome-message-wrapper p i{
@@ -88,6 +104,7 @@ nav a{
   text-align: center;
   padding: 0.5rem;
   transition: background-color 0.5s;
+  font-family: knockout;
 }
 
 .nav-item-line{
@@ -110,7 +127,7 @@ nav a:first-of-type .nav-item-line{
 }
 
 .selected-line{
-  height: 16px;
+  height: 20px;
 }
 
 section h1{
@@ -121,6 +138,7 @@ section h1{
   color: white;
   background-color: rgb(29, 48, 18);
   text-transform: uppercase;
+  font-family: knockout;
 }
 
 #about{
@@ -195,6 +213,7 @@ section h1{
  color: rgb(29, 48, 18);
  font-size: 2vw;
  text-transform: uppercase;
+ font-family: knockout;
 }
 
 .about-skills ul{
@@ -254,6 +273,7 @@ section h1{
   z-index: 2;
   margin: 0;
   height: 10vh;
+  font-family: 'Sarabun', helvetica, sans-serif;
 }
 
 .project-previews div h2{
@@ -267,6 +287,7 @@ section h1{
   z-index: 2;
   margin: 0;
   text-transform: uppercase;
+  font-family: knockout;
 }
 
 .project-previews div:nth-child(2) h4, .project-previews div:nth-child(4) h4{
@@ -290,6 +311,7 @@ section h1{
   visibility: hidden;
   transition: visibility 1s, top 2s;
   text-transform: uppercase;
+  font-family: knockout;
 }
 
 .project-previews div p{
@@ -302,6 +324,7 @@ section h1{
   visibility: hidden;
   transition: visibility 1s, top 2s;
   text-transform: uppercase;
+  font-family: knockout;
 }
 
 .project-previews div img{
@@ -357,6 +380,8 @@ section h1{
   text-align: center;
   margin-bottom: 0;
   font-size: 2vw;
+  font-family: knockout;
+  text-transform: uppercase;
 }
 
 .project-description h3{
@@ -377,6 +402,8 @@ section h1{
   margin-bottom: 0;
   margin-top: 0.1vw;
   font-size: 16px;
+  font-family: knockout;
+  text-transform: uppercase;
 }
 
 .project-description i{
@@ -520,9 +547,8 @@ section h1{
   color: rgb(29, 48, 18);
   margin: 0;
   font-size: 40px;
-}
-
-#contact h2:nth-of-type(2){
+  font-family: knockout;
+  text-transform: uppercase;
 }
 
 #contact a{
@@ -530,6 +556,8 @@ section h1{
   color: rgb(29, 48, 18);
   text-decoration: none;
   font-size: 40px;
+  font-family: knockout;
+  text-transform: uppercase;
 }
 
 #contact p{
