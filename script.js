@@ -70,11 +70,10 @@ window.addEventListener('scroll', function(){
     }
     navItems[2].classList.add('selected');
     navLines[2].classList.add('selected-line');
-    document.getElementsByClassName('project-previews')[0].style.opacity = '1';
   }
 
   // if viewing contact section
-  if(scrollAmount > welcome.scrollHeight + about.scrollHeight + projects.scrollHeight / 2){
+  if(scrollAmount > welcome.scrollHeight + about.scrollHeight + projects.scrollHeight - 350){
     for(let i = 0; i < 4; i++){
       navItems[i].classList.remove('selected');
       navLines[i].classList.remove('selected-line');
@@ -101,12 +100,16 @@ const descriptionText = document.getElementsByClassName('description-text');
 const projectLink = document.getElementById('project-link');
 const projectGit = document.getElementById('project-git');
 const projectBrief = document.getElementById('project-brief');
+let oldHeight;
+
 
 stp.addEventListener('click', function(){
+  oldHeight = window.scrollY;
+  projects.scrollIntoView();
   slideIndex = 1;
   showSlides(1);
   project.style.display = 'flex';
-  projectPreviews.style.visibility = 'hidden';
+  projectPreviews.style.display = 'none';
   slide1.src='https://i.imgur.com/ptv8Pz6.jpg';
   slide2.src='https://i.imgur.com/bXmdg00.jpg';
   slide3.src='https://i.imgur.com/aP6lgBp.png';
@@ -126,10 +129,12 @@ stp.addEventListener('click', function(){
 });
 
 fs.addEventListener('click', function(){
+  oldHeight = window.scrollY;
+  projects.scrollIntoView();
   slideIndex = 1;
   showSlides(1);
   project.style.display = 'flex';
-  projectPreviews.style.visibility = 'hidden';
+  projectPreviews.style.display = 'none';
   slide1.src='https://i.imgur.com/znrZfl6.png';
   slide2.src='https://i.imgur.com/M2PMxNh.jpg';
   slide3.src='https://i.imgur.com/ffUWUdQ.png';
@@ -148,10 +153,12 @@ fs.addEventListener('click', function(){
 });
 
 fg.addEventListener('click', function(){
+  oldHeight = window.scrollY;
+  projects.scrollIntoView();
   slideIndex = 1;
   showSlides(1);
   project.style.display = 'flex';
-  projectPreviews.style.visibility = 'hidden';
+  projectPreviews.style.display = 'none';
   slide1.src='https://i.imgur.com/hwYJXZM.png';
   slide2.src='https://i.imgur.com/Ux2xOKg.png';
   slide3.src='https://i.imgur.com/52SRL90.png';
@@ -170,10 +177,12 @@ fg.addEventListener('click', function(){
 });
 
 jim.addEventListener('click', function(){
+  oldHeight = window.scrollY;
+  projects.scrollIntoView();
   slideIndex = 1;
   showSlides(1);
   project.style.display = 'flex';
-  projectPreviews.style.visibility = 'hidden';
+  projectPreviews.style.display = 'none';
   slide1.src='https://i.imgur.com/09WmkyU.png';
   slide2.src='https://i.imgur.com/afr6H2N.png';
   slide3.src='https://i.imgur.com/3mmZueg.png';
@@ -195,9 +204,10 @@ const closeIcon = document.getElementById('close-icon');
 
 closeIcon.addEventListener('click', function(){
   project.style.display = 'none';
-  projectPreviews.style.visibility = 'visible';
+  projectPreviews.style.display = 'flex';
   slide4.style.display = 'block';
   slide4Stp.style.display = 'none';
+  window.scrollTo(0, oldHeight);
 });
 
 

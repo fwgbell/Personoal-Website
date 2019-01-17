@@ -77,7 +77,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 2;
+  z-index: 5;
 }
 
 nav a{
@@ -86,7 +86,6 @@ nav a{
   font-size: 35px;
   width: 20vw;
   text-align: center;
-  border: 0.25rem solid rgb(29, 48, 18);
   padding: 0.5rem;
   transition: background-color 0.5s;
 }
@@ -97,7 +96,7 @@ nav a{
   height: 0;
   position: absolute;
   margin-left: 9vw;
-  margin-top: 10px;
+  margin-top: 8px;
   transition: 1s;
 }
 
@@ -121,6 +120,7 @@ section h1{
   font-size: 50px;
   color: white;
   background-color: rgb(29, 48, 18);
+  text-transform: uppercase;
 }
 
 #about{
@@ -138,10 +138,9 @@ section h1{
   width: 40%;
   text-align: center;
   color: rgb(29, 48, 18);
-  background-color: rgb(232, 233, 228);
+  background-color: rgb(216, 214, 193);
   padding: 0.7rem;
   box-sizing: border-box;
-  border: 0.4rem solid rgb(29, 48, 18);
   position: relative;
   left: -50vw;
   transition: left 2s;
@@ -169,9 +168,7 @@ section h1{
   text-align: center;
   padding: 0.3rem;
   box-sizing: border-box;
-  background-color: rgb(232, 233, 228);
-  border: 0.4rem solid rgb(29, 48, 18);
-  box-sizing: border-box;
+  background-color: rgb(216, 214, 193);
   margin-top: 2vh;
 }
 
@@ -197,6 +194,7 @@ section h1{
  padding: 0;
  color: rgb(29, 48, 18);
  font-size: 2vw;
+ text-transform: uppercase;
 }
 
 .about-skills ul{
@@ -211,7 +209,7 @@ section h1{
   list-style-type: none;
   position: relative;
   left: 100vw;
-  transition: left 1s;
+  transition: left 0.5s;
   color: rgb(29, 48, 18);
   padding: 0 1rem;
   font-size: 1.6vw;
@@ -220,89 +218,137 @@ section h1{
 #projects{
   margin-top: 5vh;
   width: 100vw;
+  min-height: 100vh;
 }
 
 .project-previews{
   margin: 5vh auto;
-  width: 70vw;
-  height: 70vh;
+  width: 90vw;
   display: flex;
   flex-wrap: wrap;
-  opacity: 0;
-  transition: opacity 5s;
-  border: 1vh solid rgb(29, 48, 18);
 }
 
 .project-previews div{
-  width: 35vw;
-  height: 35vh;
+  width: 43vw;
+  height: 43vh;
   background-color: rgb(29, 48, 18);
   cursor: pointer;
+  margin-right: 47vw;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.project-previews div:nth-child(2), .project-previews div:nth-child(4){
+  margin-right: 0;
+  margin-left: 47vw;
+}
+
+.project-previews div h4{
+  position: absolute;
+  top: 12vh;
+  left: 44vw;
+  width: 100%;
+  font-size: 1vw;
+  color: rgb(29, 48, 18);
+  background-color: white;
+  z-index: 2;
+  margin: 0;
+  height: 10vh;
 }
 
 .project-previews div h2{
   position: absolute;
-  width: 35%;
-  text-align: center;
+  top: 14vh;
+  left: 44vw;
+  width: 100%;
   font-size: 2.5vw;
-  display: none;
-  color: white;
-  transition: display 1s;
+  color: rgb(29, 48, 18);
+  background-color: white;
+  z-index: 2;
+  margin: 0;
+  text-transform: uppercase;
 }
+
+.project-previews div:nth-child(2) h4, .project-previews div:nth-child(4) h4{
+  left: -44vw;
+  text-align: right;
+}
+
+.project-previews div:nth-child(2) h2, .project-previews div:nth-child(4) h2{
+  left: -44vw;
+  text-align: right;
+}
+
 
 .project-previews div h3{
   position: absolute;
-  width: 35%;
+  top: 5vh;
+  width: 100%;
   text-align: center;
-  font-size: 1.8vw;
-  display: none;
+  font-size: 2.2vw;
   color: white;
-  transition: display 1s;
-  margin-top: 15vh;
+  visibility: hidden;
+  transition: visibility 1s, top 2s;
+  text-transform: uppercase;
 }
 
 .project-previews div p{
   position: absolute;
-  width: 35%;
+  top: 25vh;
+  width: 100%;
   text-align: center;
-  font-size: 1.8vw;
-  display: none;
+  font-size: 2vw;
   color: white;
-  transition: display 1s;
-  margin-top: 25vh;
+  visibility: hidden;
+  transition: visibility 1s, top 2s;
+  text-transform: uppercase;
 }
 
 .project-previews div img{
-  width: 35vw;
-  height: 35vh;
+  width: 43vw;
+  height: 43vh;
   transition: opacity 1s;
 }
 
-.project-previews div:hover h2, .project-previews div:hover h3, .project-previews div:hover p{
-  display: block;
+.project-previews div:hover h3{
+  visibility: visible;
+  top: 8vh;
+}
+
+.project-previews div:hover p{
+  visibility: visible;
+  top: 16vh;
 }
 
 .project-previews div:hover img{
   opacity: 0.05;
 }
 
+#previews-line{
+  width: 0.15vw;
+  height: 190vh;
+  background-color: rgb(29, 48, 18);
+  position: absolute;
+  margin-left: 44.85vw;
+  margin-top: 0;
+}
+
 .project{
   width: 80vw;
   min-height: 70vh;
-  background-color: rgb(232, 233, 228);
+  background-color: rgb(29, 48, 18);
   position: absolute;
   margin: 5vh 7vw;
   padding: 0 2vw 0 2vw;
-  border: solid 5px rgb(29, 48, 18);
-  border-radius: 50px;
   display: none;
+  border-radius: 20px;
 }
 
 .project-description{
   width: 30vw;
   display: flex;
   flex-wrap: wrap;
-  color: rgb(29, 48, 18);
+  color: white;
 }
 
 .project-description h2{
@@ -336,7 +382,7 @@ section h1{
 .project-description i{
   font-size: 2rem;
   padding: 0 2rem;
-  color: rgb(29, 48, 18);
+  color: white;
 }
 
 .project-pictures{
@@ -348,7 +394,7 @@ section h1{
   padding: 3vh;
   margin: 0;
   font-size: 2vw;
-  color: rgb(29, 48, 18);
+  color: white;
 }
 
 .slideshow-container {
@@ -459,8 +505,7 @@ section h1{
 }
 
 #contact div{
-  background-color: rgb(232, 233, 228);
-  border: 0.25rem solid rgb(29, 48, 18);
+  background-color: white;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
