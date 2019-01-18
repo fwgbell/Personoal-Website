@@ -85,7 +85,7 @@ body{
 
 nav{
   height: 90px;
-  background-color: rgb(216, 214, 193);
+  background-color: #e8eae7;
   border-bottom: 0.4rem solid rgb(29, 48, 18);
   box-sizing: border-box;
   transition: top 1s;
@@ -124,7 +124,7 @@ nav a:first-of-type .nav-item-line{
 
 .selected{
   background-color: rgb(29, 48, 18);
-  color: rgb(216, 214, 193);
+  color: #e8eae7;
 }
 
 .selected-line{
@@ -157,7 +157,7 @@ section h1{
   width: 40%;
   text-align: center;
   color: rgb(29, 48, 18);
-  background-color: rgb(216, 214, 193);
+  background-color: #e8eae7;
   padding: 0.7rem;
   box-sizing: border-box;
   position: relative;
@@ -187,7 +187,7 @@ section h1{
   text-align: center;
   padding: 0.3rem;
   box-sizing: border-box;
-  background-color: rgb(216, 214, 193);
+  background-color: #e8eae7;
   margin-top: 2vh;
 }
 
@@ -360,7 +360,7 @@ section h1{
 .project{
   width: 80vw;
   min-height: 70vh;
-  background-color: rgb(29, 48, 18);
+  background-color: #e8eae7;
   position: absolute;
   margin: 5vh 7vw;
   padding: 0 2vw 0 2vw;
@@ -372,7 +372,7 @@ section h1{
   width: 30vw;
   display: flex;
   flex-wrap: wrap;
-  color: white;
+  color: rgb(29, 48, 18);
 }
 
 .project-description h2{
@@ -408,7 +408,7 @@ section h1{
 .project-description i{
   font-size: 2rem;
   padding: 0 2rem;
-  color: white;
+  color: rgb(29, 48, 18);
 }
 
 .project-pictures{
@@ -420,7 +420,7 @@ section h1{
   padding: 3vh;
   margin: 0;
   font-size: 2vw;
-  color: white;
+  color: rgb(29, 48, 18);
   font-family: knockout;
   text-transform: uppercase;
 }
