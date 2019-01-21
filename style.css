@@ -189,11 +189,14 @@ section h1{
   box-sizing: border-box;
   background-color: #e8eae7;
   margin-top: 2vh;
+  min-height: 30vh;
+  transition: 1s;
 }
 
 .about-skills div:nth-child(1){
   margin-top: 0;
   width: 100%;
+  min-height: 20vh;
 }
 
 .about-skills div:nth-child(2) li{
@@ -206,15 +209,26 @@ section h1{
 
 .about-skills div:nth-child(4){
   width: 100%;
+  min-height: 16vh;
 }
 
 .about-skills h3{
  margin: 0;
+ margin-top: 10vh;
  padding: 0;
  color: rgb(29, 48, 18);
- font-size: 2vw;
+ font-size: 2.75vw;
  text-transform: uppercase;
  font-family: knockout;
+ transition: 1s;
+}
+
+.about-skills div:nth-child(1) h3{
+  margin-top: 6.5vh;
+}
+
+.about-skills div:nth-child(4) h3{
+  margin-top: 5vh;
 }
 
 .about-skills ul{
@@ -223,16 +237,37 @@ section h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  transition: 1s;
+  opacity: 0;
 }
 
 .about-skills li{
   list-style-type: none;
   position: relative;
   left: 100vw;
-  transition: left 0.5s;
+  transition: 1s;
   color: rgb(29, 48, 18);
   padding: 0 1rem;
+  font-size: 0;
+}
+
+.about-skills div:hover{
+  background-color: rgb(29, 48, 18);
+}
+
+.about-skills div:hover h3{
+  margin: 0;
+  font-size: 2vw;
+  color: #e8eae7;
+}
+
+.about-skills div:hover ul{
+  opacity: 1;
+}
+
+.about-skills div:hover li{
   font-size: 1.6vw;
+  color: #e8eae7;
 }
 
 #projects{
@@ -273,7 +308,7 @@ section h1{
   background-color: white;
   z-index: 2;
   margin: 0;
-  height: 10vh;
+  height: 7vh;
   font-family: 'Sarabun', helvetica, sans-serif;
 }
 
@@ -361,6 +396,7 @@ section h1{
   width: 80vw;
   min-height: 70vh;
   background-color: #e8eae7;
+  background-image: radial-gradient(#e8eae7, #778270);
   position: absolute;
   margin: 5vh 7vw;
   padding: 0 2vw 0 2vw;

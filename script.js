@@ -54,12 +54,6 @@ window.addEventListener('scroll', function(){
     navLines[1].classList.add('selected-line');
     aboutMe.style.left = '0';
     aboutSkills.style.left = '0';
-    const skills = document.getElementsByTagName('li');
-    let i = 0;
-    setInterval(function(){
-      if(i < skills.length) skills[i].style.left = '0';
-      i++;
-    }, 100);
   }
 
   // if viewing projects section
@@ -81,6 +75,46 @@ window.addEventListener('scroll', function(){
     navItems[3].classList.add('selected');
     navLines[3].classList.add('selected-line');
   }
+});
+
+const skillsTech = document.getElementById('skills-tech');
+skillsTech.addEventListener('mouseover', function(){
+  const skills = document.getElementsByClassName('tech-li');
+  let i = 0;
+  setInterval(function(){
+    if(i < skills.length) skills[i].style.left = '0';
+    i++;
+  }, 100);
+});
+
+const skillsMeth = document.getElementById('skills-meth');
+skillsMeth.addEventListener('mouseover', function(){
+  const skills = document.getElementsByClassName('meth-li');
+  let i = 0;
+  setInterval(function(){
+    if(i < skills.length) skills[i].style.left = '0';
+    i++;
+  }, 100);
+});
+
+const skillsSoft = document.getElementById('skills-soft');
+skillsSoft.addEventListener('mouseover', function(){
+  const skills = document.getElementsByClassName('soft-li');
+  let i = 0;
+  setInterval(function(){
+    if(i < skills.length) skills[i].style.left = '0';
+    i++;
+  }, 100);
+});
+
+const skillsTool = document.getElementById('skills-tool');
+skillsTool.addEventListener('mouseover', function(){
+  const skills = document.getElementsByClassName('tool-li');
+  let i = 0;
+  setInterval(function(){
+    if(i < skills.length) skills[i].style.left = '0';
+    i++;
+  }, 100);
 });
 
 const project = document.getElementsByClassName('project')[0];
