@@ -384,7 +384,7 @@ section h1{
 }
 
 #previews-line{
-  width: 0.15vw;
+  width: 0.2vw;
   height: 190vh;
   background-color: rgb(29, 48, 18);
   position: absolute;
@@ -636,7 +636,7 @@ section h1{
     font-size: 5vw;
   }
   .selected-line{
-    height: 10px;
+    height: 8px;
   }
   nav a:first-of-type .nav-item-line {
     margin-top: -32px;
@@ -674,7 +674,7 @@ section h1{
     min-height: 17vh;
   }
   .about-skills h3{
-    font-size: 5.5vw;
+    font-size: 5vw;
     margin-top: 15vh;
   }
   .about-skills div:hover h3 {
@@ -682,6 +682,26 @@ section h1{
   }
   .about-skills div:hover li{
     font-size: 4vw;
+  }
+  #previews-line{
+    width: 1vw;
+    height: 90%;
+  }
+  .project-previews div h2{
+    font-size: 5vw;
+    background-color: transparent;
+    margin-top: 1vh;
+    top: 5vh;
+  }
+  .project-previews div h4{
+    font-size: 4vw;
+    top: 3vh;
+  }
+  .project-previews div{
+    height: 18vh;
+  }
+  .project-previews div img{
+    height: 18vh;
   }
   #contact h2{
     font-size: 24px;
