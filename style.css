@@ -612,6 +612,7 @@ section h1{
   }
   .welcome-picture-wrapper img{
     margin: 0;
+    margin-bottom: 10vh;
   }
   .welcome-picture{
     width: 200px;
