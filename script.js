@@ -149,6 +149,9 @@ let oldHeight;
 
 
 stp.addEventListener('click', function(){
+  if (window.innerWidth < 760){
+    projects.style.minHeight = '165vh';
+  }
   oldHeight = window.scrollY;
   projects.scrollIntoView();
   slideIndex = 1;
@@ -174,6 +177,9 @@ stp.addEventListener('click', function(){
 });
 
 fs.addEventListener('click', function(){
+  if (window.innerWidth < 760){
+    projects.style.minHeight = '165vh';
+  }
   oldHeight = window.scrollY;
   projects.scrollIntoView();
   slideIndex = 1;
@@ -198,6 +204,9 @@ fs.addEventListener('click', function(){
 });
 
 fg.addEventListener('click', function(){
+  if (window.innerWidth < 760){
+    projects.style.minHeight = '165vh';
+  }
   oldHeight = window.scrollY;
   projects.scrollIntoView();
   slideIndex = 1;
@@ -222,6 +231,9 @@ fg.addEventListener('click', function(){
 });
 
 jim.addEventListener('click', function(){
+  if (window.innerWidth < 760){
+    projects.style.minHeight = '165vh';
+  }
   oldHeight = window.scrollY;
   projects.scrollIntoView();
   slideIndex = 1;
@@ -248,6 +260,9 @@ jim.addEventListener('click', function(){
 const closeIcon = document.getElementById('close-icon');
 
 closeIcon.addEventListener('click', function(){
+  if (window.innerWidth < 760){
+    projects.style.minHeight = '0';
+  }
   project.style.display = 'none';
   projectPreviews.style.display = 'flex';
   slide4.style.display = 'block';

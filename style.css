@@ -703,6 +703,31 @@ section h1{
   .project-previews div img{
     height: 18vh;
   }
+  .project{
+    flex-direction: column;
+  }
+  .project-pictures{
+    width: 100%;
+  }
+  .project-description{
+    width: 100%;
+  }
+  .project-description i{
+    margin: 1vh 0;
+  }
+  #project-brief{
+    font-size: 3vw;
+  }
+  #project-title{
+    font-size: 6vw;
+  }
+  #close-icon{
+    top: 1%;
+    right: 16%;
+  }
+  #close-icon i{
+    font-size: 5vw;
+  }
   #contact h2{
     font-size: 24px;
   }
