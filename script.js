@@ -261,7 +261,7 @@ const closeIcon = document.getElementById('close-icon');
 
 closeIcon.addEventListener('click', function(){
   if (window.innerWidth < 760){
-    projects.style.minHeight = '0';
+    projects.style.minHeight = '100vh';
   }
   project.style.display = 'none';
   projectPreviews.style.display = 'flex';
