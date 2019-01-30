@@ -15,6 +15,17 @@ findOutMore.addEventListener('click', function(){
 const windowHeight = window.innerHeight;
 const height = nav.scrollHeight + windowHeight;
 
+
+if (window.innerWidth < 760){
+  console.log('Less than 760');
+  aboutMe.style.transition = '0s';
+  aboutSkills.style.transition = '0s';
+  aboutMe.style.left = '0';
+  aboutSkills.style.left = '0';
+} else {
+  console.log('More than 760');
+}
+
 window.addEventListener('scroll', function(){
   const scrollAmount = window.scrollY;
 

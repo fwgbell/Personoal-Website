@@ -592,11 +592,101 @@ section h1{
   margin: 0;
   color: rgb(29, 48, 18);
   text-decoration: none;
-  font-size: 40px;
+  font-size: 35px;
   font-family: knockout;
   text-transform: uppercase;
 }
 
 #contact p{
   margin: 0;
+}
+
+
+@media only screen and (max-width: 750px) {
+  #welcome{
+    flex-direction: column;
+  }
+  .welcome-picture-wrapper{
+    width: 100vw;
+    padding-top: 10vh;
+  }
+  .welcome-picture-wrapper img{
+    margin: 0;
+  }
+  .welcome-picture{
+    width: 200px;
+  }
+  .welcome-message-wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .welcome-message{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .welcome-message p {
+    width: 13rem;
+    font-size: 9.25vw;
+  }
+  nav{
+    height: 50px;
+  }
+  nav a{
+    font-size: 5vw;
+  }
+  .selected-line{
+    height: 10px;
+  }
+  nav a:first-of-type .nav-item-line {
+    margin-top: -32px;
+  }
+  section h1{
+    font-size: 30px;
+  }
+  #about{
+    flex-direction: column;
+  }
+  .about-me{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-me p{
+    font-size: 3vw;
+  }
+  .about-skills{
+    width: 80%;
+    margin: 5vh auto;
+  }
+  .about-skills div{
+    min-height: 37vh;
+  }
+  .about-skills div:nth-child(1) {
+    min-height: 24vh;
+  }
+  .about-skills div:nth-child(1) h3{
+    margin-top: 9vh;
+  }
+  .about-skills div:nth-child(1):hover h3{
+    margin-top: 0;
+  }
+  .about-skills div:nth-child(4){
+    min-height: 17vh;
+  }
+  .about-skills h3{
+    font-size: 5.5vw;
+    margin-top: 15vh;
+  }
+  .about-skills div:hover h3 {
+    font-size: 5vw;
+  }
+  .about-skills div:hover li{
+    font-size: 4vw;
+  }
+  #contact h2{
+    font-size: 24px;
+  }
+  #contact a{
+    font-size: 16px;
+  }
 }
